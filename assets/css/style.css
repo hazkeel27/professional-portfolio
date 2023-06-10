@@ -1,0 +1,112 @@
+:root{
+    /*Setting text colour to variables*/
+    --paragraph-text-colour: #ffffff;
+    --h1-text-colour: #FF6300;
+    --h2-text-colour: #ffffff;
+    --h3-text-colour: #ffffff;
+
+    /*setting text font to variables*/
+    --paragraph-text-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --h1-text-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --h2-text-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --h3-text-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    /*setting text size to variables*/
+    --paragraph-text-size: 15px;
+    --h1-text-size: 60px;
+    --h2-text-size: 50px;
+    --h3-text-size: 50px;
+
+    /*all css variables for the 'a' tag*/
+    --a-text-colour: #ffffff;
+    --a-text-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*applying css to body*/
+body{
+    background-color: #080424;
+    margin: 0;
+    padding: 0;
+}
+
+/*applying css to p tag*/
+p{
+    color: var(--paragraph-text-colour);   
+    font-family: var(--paragraph-text-font);
+    font-size: var(--paragraph-text-size);
+}
+
+/*applying css to h1 tag*/
+h1{
+    color: var(--h1-text-colour);
+    font-family: var(--h1-text-font);
+    font-size: var(--h1-text-size);
+    margin: 0;
+}
+
+/*applying css to h2 tag*/
+h2{
+    color: var(--h2-text-colour);
+    font-family: var(--h2-text-font);
+    font-size: var(--h2-text-size);
+
+}
+
+/*applying css to h3 tag*/
+h3{
+    color: var(--h2-text-colour);
+    font-family: var(--h2-text-font);
+    font-size: var(--h3-text-size);
+}
+
+/*applying styling to all 'a' tags*/
+a:link, a:visited{
+    text-decoration: none;
+    color: var(--a-text-colour);
+    font-family: var(--a-text-font);
+}
+
+/*applying styling to all 'a' tags*/
+a:hover{
+    color: #FF6300;
+}
+
+/*applying css to the navigation bar*/
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+nav a {
+    padding: 0px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/*applying css to the profile picture*/
+.profile-picture img{
+    border-radius: 100%;
+    width: 170px; 
+    height: 170px; 
+    object-fit: none;
+    object-position: 50% 50%;
+}
+
+/*class for the first section of html which shows when the weboage first loads*/
+.initial-intro{
+    height: 95vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+  /*align center class*/
+.align-center
+{
+    text-align: center;
+}
