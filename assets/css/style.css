@@ -88,10 +88,13 @@ nav a {
 /*applying css to the profile picture*/
 .profile-picture img{
     border-radius: 100%;
+    border-style: solid;
+    border-color: #ffffff;
     width: 170px; 
     height: 170px; 
     object-fit: none;
     object-position: 50% 50%;
+    box-shadow: 10px -10px 80px 20px #170979;
 }
 
 /*class for the first section of html which shows when the weboage first loads*/
@@ -103,7 +106,33 @@ nav a {
     justify-content: center;
 }
 
+.about-me{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-right: 30px;
 
+    /*border: solid white;*/
+}
+
+.about-me h2{
+    margin: 0;
+    padding-left: 100px;
+    padding-right: 30px;
+    text-align: right;
+
+    /*border: solid white;*/
+}
+
+.about-me div{
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #3A2972;
+    box-shadow: 15px 1px 50px #12094D;
+
+    /*border: solid white;*/
+}
 
   /*align center class*/
 .align-center
