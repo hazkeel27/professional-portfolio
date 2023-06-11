@@ -69,6 +69,7 @@ a:link, a:visited{
 /*applying styling to all 'a' tags*/
 a:hover{
     color: #FF6300;
+    text-shadow: 0 0 15px #FF6300;
 }
 
 /*----------NAVIGATION BAR CSS - BEGINS----------*/
@@ -101,6 +102,11 @@ nav a {
     box-shadow: 10px -10px 80px 20px #170979;
 }
 
+/*adds a shadow over the profile picture on hover*/
+.profile-picture img:hover{
+    box-shadow: 10px -10px 80px 50px #170979;
+}
+
 /*class for the first section of html which shows when the webpage first loads*/
 .initial-intro{
     height: 95vh;
@@ -108,6 +114,9 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.initial-intro h1:hover{
+    text-shadow: 0 0 15px #FF6300;
 }
 /*----------TOP OF THE PAGE (PROFILE PIC & NAME) CSS - ENDS----------*/
 
@@ -119,7 +128,6 @@ nav a {
     margin-bottom: 30px;
     margin-right: 30px;
     padding-top: 30px;
-
 }
 
 /*applying css to the about me section's h2 tag*/
@@ -136,7 +144,11 @@ nav a {
     padding-left: 30px;
     padding-right: 30px;
     background-color: #3A2972;
-    box-shadow: 10px 10px 25px #1E107D;
+}
+
+/*adds box shadow on hover*/
+.about-me div:hover{
+    box-shadow: 0px 0px 40px #1E107D;
 }
 
 /*applying css to the about me section's p tag*/
@@ -169,7 +181,6 @@ nav a {
     height: 95vh;
     display: flex;
     flex-direction: column;
-
 }
 
 /*setting the flex grow so that the first project fills up the top half*/
@@ -182,10 +193,14 @@ nav a {
     margin-bottom: 30px;
     margin-right: 30px;
     background-color: #3A2972;
-    box-shadow: 10px 10px 25px #1E107D;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
+}
+
+/*adds box shadow on hover*/
+.top-div:hover{
+    box-shadow: 0px 0px 40px #1E107D;
 }
 
 /*applying css to the div which contains the other four projects*/
@@ -204,7 +219,11 @@ nav a {
     margin-bottom: 30px;
     margin-right: 30px;
     background-color: #3A2972;
-    box-shadow: 10px 10px 25px #1E107D;
+}
+
+/*adds box shadow on hover*/
+.individual-bottom-div:hover{
+    box-shadow: 0px 0px 40px #1E107D;
 }
 
 /*applying margin to the h3 in work section*/
@@ -215,6 +234,7 @@ nav a {
 /*----------WORK SECTION CSS - ENDS----------*/
 
 /*----------CONTACT ME CSS - BEGINS----------*/
+/*adds structure to the contact me section*/
 .contact-me{
     display: flex;
     flex-direction: row;
@@ -223,9 +243,10 @@ nav a {
     padding-top: 30px;
 }
 
+/*applied css to the h2 tag in contact me section*/
 .contact-me h2{
     margin: 0;
-    padding-left: 45px;
+    padding-left: 20px;
     padding-right: 30px;
     text-align: right;
 }
@@ -236,13 +257,17 @@ nav a {
     padding-left: 30px;
     padding-right: 30px;
     background-color: #3A2972;
-    box-shadow: 10px 10px 25px #1E107D;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+/*adds box shadow on hover*/
+.contact-me div:hover{
+    box-shadow: 0px 0px 40px #1E107D;
 }
 /*----------CONTACT ME CSS - ENDS----------*/
 
