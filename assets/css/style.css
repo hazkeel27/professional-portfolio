@@ -147,6 +147,7 @@ nav a {
 /*----------ABOUT ME SECTION CSS - ENDS----------*/
 
 /*----------WORK SECTION CSS - BEGINS----------*/
+/*setting the structure of the work section with a class named work*/
 .work{
     display: flex;
     flex-direction: row;
@@ -154,6 +155,7 @@ nav a {
     padding-top: 30px;
 }
 
+/*applying css to the h2 tag of work section*/
 .work h2{
     margin: 0;
     padding-left: 100px;
@@ -161,6 +163,7 @@ nav a {
     text-align: right;
 }
 
+/*setting structure to the work section's div tag by expanding the div*/
 .parent-div{
     width: 100%;
     height: 95vh;
@@ -169,10 +172,12 @@ nav a {
 
 }
 
+/*setting the flex grow so that the first project fills up the top half*/
 .child-div{
-    flex: 1;
+    flex-grow: 1;
 }
 
+/*applying css to the first project div*/
 .top-div{
     margin-bottom: 30px;
     margin-right: 30px;
@@ -183,12 +188,14 @@ nav a {
     justify-content: flex-start;
 }
 
+/*applying css to the div which contains the other four projects*/
 .bottom-div{
     display: flex;
     flex-direction: row;
     height: 50%;
 }
 
+/*applying css to the four projects*/
 .individual-bottom-div{
     display: flex;
     flex-direction: column-reverse;
@@ -200,11 +207,44 @@ nav a {
     box-shadow: 10px 10px 25px #1E107D;
 }
 
+/*applying margin to the h3 in work section*/
 .parent-div h3{
     margin-bottom: 10px;
     margin-right: 10px;
 }
 /*----------WORK SECTION CSS - ENDS----------*/
+
+/*----------CONTACT ME CSS - BEGINS----------*/
+.contact-me{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding-top: 30px;
+}
+
+.contact-me h2{
+    margin: 0;
+    padding-left: 45px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+/*applying css to the contact me section's div tag*/
+.contact-me div{
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #3A2972;
+    box-shadow: 10px 10px 25px #1E107D;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*----------CONTACT ME CSS - ENDS----------*/
 
   /*align center class*/
 .align-center
