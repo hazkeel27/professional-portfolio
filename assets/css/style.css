@@ -15,7 +15,7 @@
     --paragraph-text-size: 15px;
     --h1-text-size: 60px;
     --h2-text-size: 50px;
-    --h3-text-size: 50px;
+    --h3-text-size: 35px;
 
     /*all css variables for the 'a' tag*/
     --a-text-colour: #ffffff;
@@ -71,6 +71,7 @@ a:hover{
     color: #FF6300;
 }
 
+/*----------NAVIGATION BAR CSS - BEGINS----------*/
 /*applying css to the navigation bar*/
 nav{
     display: flex;
@@ -78,13 +79,16 @@ nav{
     justify-content: flex-start;
 }
 
+/*applying css to the navigation bar's a tag*/
 nav a {
     padding: 0px 30px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
 }
+/*----------NAVIGATION BAR CSS - ENDS----------*/
 
+/*----------TOP OF THE PAGE (PROFILE PIC & NAME) CSS - BEGINS----------*/
 /*applying css to the profile picture*/
 .profile-picture img{
     border-radius: 100%;
@@ -97,7 +101,7 @@ nav a {
     box-shadow: 10px -10px 80px 20px #170979;
 }
 
-/*class for the first section of html which shows when the weboage first loads*/
+/*class for the first section of html which shows when the webpage first loads*/
 .initial-intro{
     height: 95vh;
     width: 98vw;
@@ -105,37 +109,111 @@ nav a {
     flex-direction: column;
     justify-content: center;
 }
+/*----------TOP OF THE PAGE (PROFILE PIC & NAME) CSS - ENDS----------*/
 
+/*----------ABOUT ME SECTION CSS - BEGINS----------*/
+/*class for the about me section of html*/
 .about-me{
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
     margin-right: 30px;
+    padding-top: 30px;
 
-    /*border: solid white;*/
 }
 
+/*applying css to the about me section's h2 tag*/
 .about-me h2{
     margin: 0;
     padding-left: 100px;
     padding-right: 30px;
     text-align: right;
-
-    /*border: solid white;*/
 }
 
+/*applying css to the about me section's div tag*/
 .about-me div{
     margin: 0;
     padding-left: 30px;
     padding-right: 30px;
     background-color: #3A2972;
-    box-shadow: 15px 1px 50px #12094D;
-
-    /*border: solid white;*/
+    box-shadow: 10px 10px 25px #1E107D;
 }
+
+/*applying css to the about me section's p tag*/
+.about-me div p{
+    line-height: 175%;
+    letter-spacing: 1px;
+}
+/*----------ABOUT ME SECTION CSS - ENDS----------*/
+
+/*----------WORK SECTION CSS - BEGINS----------*/
+.work{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.work h2{
+    margin: 0;
+    padding-left: 100px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.parent-div{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.child-div{
+    flex: 1;
+}
+
+.top-div{
+    margin-bottom: 30px;
+    margin-right: 30px;
+    background-color: #3A2972;
+    box-shadow: 10px 10px 25px #1E107D;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+.bottom-div{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+}
+
+.individual-bottom-div{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    background-color: #3A2972;
+    box-shadow: 10px 10px 25px #1E107D;
+}
+
+.parent-div h3{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+/*----------WORK SECTION CSS - ENDS----------*/
 
   /*align center class*/
 .align-center
 {
     text-align: center;
+}
+
+/*align right class*/
+.align-right
+{
+    text-align: right;
 }
