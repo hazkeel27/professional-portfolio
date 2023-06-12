@@ -283,6 +283,7 @@ nav a {
     text-align: right;
 }
 
+/*----------MEDIA QUERY MAX 768px CSS - BEGINS----------*/
 @media screen and (max-width: 768px) {
 
     /*reshaping the h2 tags*/
@@ -293,6 +294,11 @@ nav a {
     nav{
         flex-direction: row;
         justify-content: center;
+    }
+
+    /*adjusting the cont of nav bar text*/
+    nav ul a{
+        font-size: 11px;
     }
 
     /*re-shaping the size of the profile picture*/
@@ -325,7 +331,7 @@ nav a {
         text-align: left;
         padding: 0;
     }
-    
+
     /*re-structuring the contact me section for improved view*/
     .contact-me {
         flex-direction: column;
@@ -346,3 +352,51 @@ nav a {
         align-items: flex-start;
     }
 }
+/*----------MEDIA QUERY MAX 768px CSS - ENDS----------*/
+
+/*----------MEDIA QUERY MAX 480px CSS - BEGINS----------*/
+@media screen and (max-width: 480px) {
+
+    /*reshaping the h2 tags*/
+    h1, h2 { font-size: 30px; }
+    h3{ font-size: 20px; }
+
+    /*aligning nav bar to the center*/
+    nav ul{
+        padding: 0;
+    }
+
+    /*adjusting the cont of nav bar text*/
+    nav ul a{
+        font-size: 10px;
+    }
+
+    /*re-shaping the size of the profile picture*/
+    .profile-picture img{
+        width: 110px;
+        height: 110px;
+        object-position: 50% 37%;
+    }
+
+    /*reshaping font size of the subheading below h1 tag on page reload*/
+    .initial-intro p{ font-size: 10px; }
+
+    /*h2 tag aligned to center*/
+    .about-me h2{
+       text-align: center;
+    }
+    
+    /*h2 tag aligned to center*/
+    .work h2{
+        text-align: center;
+    }
+
+
+
+    /*re-structuring the work section for improved view*/
+    .bottom-div{
+        flex-direction: column;
+        height: 25%;
+    }
+}
+/*----------MEDIA QUERY MAX 480px CSS - ENDS----------*/
