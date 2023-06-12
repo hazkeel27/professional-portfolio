@@ -110,7 +110,7 @@ nav a {
 /*class for the first section of html which shows when the webpage first loads*/
 .initial-intro{
     height: 95vh;
-    width: 98vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,4 +281,68 @@ nav a {
 .align-right
 {
     text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+
+    /*reshaping the h2 tags*/
+    h1, h2 { font-size: 40px; }
+    h3{ font-size: 25px; }
+
+    /*aligning nav bar in the center*/
+    nav{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /*re-shaping the size of the profile picture*/
+    .profile-picture img{
+        width: 130px;
+        height: 130px;
+        object-position: 50% 50%;
+    }
+
+    /*re-structuring the about me section for improved view*/
+    .about-me{
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    /*aligning h2 to the left*/
+    .about-me h2{
+        text-align: left;
+        padding: 0;
+    }
+
+    /*re-structuring the work section for improved view*/
+    .work {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    /*aligning h2 to the left*/
+    .work h2{
+        text-align: left;
+        padding: 0;
+    }
+    
+    /*re-structuring the contact me section for improved view*/
+    .contact-me {
+        flex-direction: column;
+        margin: 30px;
+        padding: 0;
+    }
+    
+    /*aligning h2 to the left*/
+    .contact-me h2{
+        text-align: left;
+        padding: 0;
+    }
+
+    /*re-structuring the contant info for improved view*/
+    .contact-me div{
+        width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
