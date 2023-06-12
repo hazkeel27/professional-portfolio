@@ -22,7 +22,7 @@ This is a straight forward static website which does not require instructions fo
 
 Below is a screenshot of the webpage once it reloads.
 
-
+![professional-portfolio](https://github.com/hazkeel27/professional-portfolio/assets/55248924/515e6760-525c-4f6a-8d54-efd0ab08c9fe)
 
 ## Credits
 
@@ -48,3 +48,4 @@ https://s7280.pcdn.co/wp-content/uploads/2016/06/database-blue.png
 https://t4.ftcdn.net/jpg/03/20/46/13/360_F_320461388_5Snqf6f2tRIqiWlaIzNWrCUm1Ocaqhfm.jpg
 
 ## Deploy Application
+https://hazkeel27.github.io/professional-portfolio/
