@@ -306,9 +306,9 @@ nav a {
 }
 
 /*align right class*/
-.align-right
+.align-left
 {
-    text-align: right;
+    text-align: left;
 }
 
 /*----------MEDIA QUERY MAX 768px CSS - BEGINS----------*/
